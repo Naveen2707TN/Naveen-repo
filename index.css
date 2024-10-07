@@ -1,0 +1,78 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("src/background.jpeg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main .nav{
+    width: 98vw;
+    height: 7vh;
+    position: absolute;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) , rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    box-shadow:  rgba(0, 0, 0, 0.35);
+    border: 1.8px solid rgba(0, 0, 0, 0.35);
+    top: 10px;
+    border-radius: 10px;
+}
+.nav .left{
+    float: left;
+    background: transparent;
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    left: 10px;
+}
+.nav .right{
+    float: right;
+    background-color: transparent;
+    width: 54%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.8s ease-in;
+}
+.left label{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.right label{
+    color: aliceblue;
+    cursor: pointer;
+}
+.right label:hover{
+    color: rgba(249, 205, 5);
+}
+.content{
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .Home{
+    width: 70vw;
+    height: 60vh;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) , rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border: 1.8px solid rgba(0, 0, 0, 0.35);
+    transition: 1s ease-in-out;
+}
+.Home:hover{
+    border: 1.8px solid rgba(249, 205, 5);
+}
